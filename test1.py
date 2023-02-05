@@ -2,4 +2,6 @@
 
 import pandas as pd
 
-print(pd.__version__)
+df = pd.read_excel('data/n_fot2022-01-12.xls')
+
+print(df)
