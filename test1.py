@@ -9,7 +9,7 @@ df.dropna(inplace=True)         # Remove None and NaN
 df = df.set_index('Unnamed: 0') # Set date and time to index
 df.columns = df.loc['Tid']      # Set correct labels on columns
 df = df[1:]                     # Remove first row
-df.columns.name = ''            # Remove ugly label on columns
+df.columns.name = 'MWh'         # Remove ugly label on columns
 df.index.name = 'Tid'           # Remove ugly "Unknown: 0"
 
 # Make total consumption from negative to positive
